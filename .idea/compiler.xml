@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xxpay4spring-boot" />
+        <module name="xxpay4dubbo-web" />
+        <module name="xxpay-common" />
+        <module name="xxpay4dubbo-api" />
+        <module name="xxpay-dal" />
+        <module name="xxpay-service" />
+        <module name="xxpay-mgr" />
+        <module name="xxpay-server" />
+        <module name="xxpay-shop" />
+        <module name="xxpay-gateway" />
+        <module name="xxpay-web" />
+        <module name="xxpay-config" />
+        <module name="xxpay4dubbo-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
