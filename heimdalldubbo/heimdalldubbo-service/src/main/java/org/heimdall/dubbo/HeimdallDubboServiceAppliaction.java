@@ -9,8 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan(basePackages={"org.heimdall"})
-public class XxPayDubboServiceAppliaction {
+public class HeimdallDubboServiceAppliaction {
     public static void main(String[] args) {
-        SpringApplication.run(XxPayDubboServiceAppliaction.class, args);
+        SpringApplication.run(HeimdallDubboServiceAppliaction.class, args);
     }
 }

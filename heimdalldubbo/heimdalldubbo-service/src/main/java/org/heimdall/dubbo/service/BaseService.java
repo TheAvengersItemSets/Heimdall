@@ -2,6 +2,7 @@ package org.heimdall.dubbo.service;
 
 import org.heimdall.dal.dao.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.heimdall.common.constant.PayConstant;
@@ -19,6 +20,7 @@ import java.util.List;
  * @description:
  */
 @Service
+@Component
 public class BaseService {
 
     @Autowired

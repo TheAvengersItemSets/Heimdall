@@ -2,7 +2,6 @@ package org.heimdall.common.domain;
 
 import org.heimdall.common.enumm.RpcSignTypeEnum;
 import org.heimdall.common.util.*;
-import org.xxpay.common.util.*;
 
 import java.io.Serializable;
 import java.util.HashMap;

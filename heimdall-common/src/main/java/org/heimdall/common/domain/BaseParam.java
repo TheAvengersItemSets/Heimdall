@@ -3,7 +3,6 @@ package org.heimdall.common.domain;
 import org.apache.commons.lang3.StringUtils;
 import org.heimdall.common.util.*;
 import org.heimdall.common.enumm.RpcSignTypeEnum;
-import org.xxpay.common.util.*;
 
 import java.util.*;
 
