@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xxpay4spring-boot" />
-        <module name="xxpay4dubbo-web" />
-        <module name="xxpay-common" />
-        <module name="xxpay4dubbo-api" />
-        <module name="xxpay-dal" />
-        <module name="xxpay-service" />
-        <module name="xxpay-mgr" />
-        <module name="xxpay-server" />
-        <module name="xxpay-shop" />
-        <module name="xxpay-gateway" />
-        <module name="xxpay-web" />
-        <module name="xxpay-config" />
-        <module name="xxpay4dubbo-service" />
+        <module name="heimdalldubbo-web" />
+        <module name="heimdall-dal" />
+        <module name="heimdall-server" />
+        <module name="heimdall-mgr" />
+        <module name="heimdall-service" />
+        <module name="heimdall-config" />
+        <module name="heimdall-gateway" />
+        <module name="heimdalldubbo-service" />
+        <module name="heimdall-common" />
+        <module name="heimdall-web" />
+        <module name="heimdallspring-boot" />
+        <module name="heimdall-shop" />
+        <module name="heimdalldubbo-api" />
       </profile>
     </annotationProcessing>
   </component>
