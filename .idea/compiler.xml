@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="heimdalldubbo-web" />
-        <module name="heimdall-dal" />
+        <module name="heimdall-shop" />
         <module name="heimdall-server" />
-        <module name="heimdall-mgr" />
         <module name="heimdall-service" />
         <module name="heimdall-config" />
-        <module name="heimdall-gateway" />
-        <module name="heimdalldubbo-service" />
-        <module name="heimdall-common" />
+        <module name="heimdall-dal" />
+        <module name="heimdalldubbo-api" />
         <module name="heimdall-web" />
         <module name="heimdallspring-boot" />
-        <module name="heimdall-shop" />
-        <module name="heimdalldubbo-api" />
+        <module name="heimdalldubbo-web" />
+        <module name="heimdall-common" />
+        <module name="heimdall-mgr" />
+        <module name="heimdalldubbo-service" />
+        <module name="heimdall-gateway" />
       </profile>
     </annotationProcessing>
   </component>
