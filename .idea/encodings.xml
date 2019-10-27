@@ -2,20 +2,20 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdall-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdall-dal" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdall-mgr" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdall-shop" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdalldubbo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdalldubbo/heimdalldubbo-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdalldubbo/heimdalldubbo-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdalldubbo/heimdalldubbo-web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdallspring-boot" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdallspring-cloud" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdallspring-cloud/heimdall-config" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdallspring-cloud/heimdall-gateway" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdallspring-cloud/heimdall-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdallspring-cloud/heimdall-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/heimdallspring-cloud/heimdall-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay-dal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay-mgr" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay-shop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4dubbo/xxpay4dubbo-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4dubbo/xxpay4dubbo-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4dubbo/xxpay4dubbo-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4spring-boot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4spring-cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4spring-cloud/xxpay-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4spring-cloud/xxpay-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4spring-cloud/xxpay-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4spring-cloud/xxpay-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxpay4spring-cloud/xxpay-web" charset="UTF-8" />
   </component>
 </project>

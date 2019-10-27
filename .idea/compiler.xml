@@ -6,20 +6,37 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="heimdall-shop" />
-        <module name="heimdall-server" />
-        <module name="heimdall-service" />
-        <module name="heimdall-config" />
-        <module name="heimdall-dal" />
-        <module name="heimdalldubbo-api" />
-        <module name="heimdall-web" />
-        <module name="heimdallspring-boot" />
-        <module name="heimdalldubbo-web" />
-        <module name="heimdall-common" />
-        <module name="heimdall-mgr" />
-        <module name="heimdalldubbo-service" />
-        <module name="heimdall-gateway" />
+        <module name="xxpay-gateway" />
+        <module name="xxpay4dubbo-web" />
+        <module name="xxpay-common" />
+        <module name="xxpay4dubbo-api" />
+        <module name="xxpay4spring-boot" />
+        <module name="xxpay-service" />
+        <module name="xxpay-shop" />
+        <module name="xxpay-dal" />
+        <module name="xxpay-server" />
+        <module name="xxpay-mgr" />
+        <module name="xxpay-config" />
+        <module name="xxpay-web" />
+        <module name="xxpay4dubbo-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="heimdall-common" target="1.5" />
+      <module name="heimdall-config" target="1.8" />
+      <module name="heimdall-dal" target="1.6" />
+      <module name="heimdall-gateway" target="1.8" />
+      <module name="heimdall-mgr" target="1.8" />
+      <module name="heimdall-server" target="1.8" />
+      <module name="heimdall-service" target="1.8" />
+      <module name="heimdall-shop" target="1.8" />
+      <module name="heimdall-web" target="1.8" />
+      <module name="heimdalldubbo" target="1.8" />
+      <module name="heimdalldubbo-api" target="1.8" />
+      <module name="heimdalldubbo-service" target="1.8" />
+      <module name="heimdalldubbo-web" target="1.8" />
+      <module name="heimdallspring-boot" target="1.8" />
+      <module name="heimdallspring-cloud" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

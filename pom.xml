@@ -3,21 +3,21 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.heimdall</groupId>
-  <artifactId>heimdall-master</artifactId>
+  <groupId>org.xxpay</groupId>
+  <artifactId>xxpay-master</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
-  <name>heimdall-master</name>
-  <description>heimdall-master</description>
+  <name>xxpay-master</name>
+  <description>xxpay-master</description>
 
   <modules>
-    <module>heimdall-common</module>
-    <module>heimdall-dal</module>
-    <module>heimdall-mgr</module>
-    <module>heimdall-shop</module>
-    <module>heimdallspring-cloud</module>
-    <module>heimdalldubbo</module>
-    <module>heimdallspring-boot</module>
+    <module>xxpay-common</module>
+    <module>xxpay-dal</module>
+    <module>xxpay-mgr</module>
+    <module>xxpay-shop</module>
+    <module>xxpay4spring-cloud</module>
+    <module>xxpay4dubbo</module>
+    <module>xxpay4spring-boot</module>
   </modules>
 
   <properties>
