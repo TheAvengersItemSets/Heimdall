@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: org.xxpay.dubbo.service.PayServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 3.385 sec <<< FAILURE! - in org.xxpay.dubbo.service.PayServiceTest
+testDoAliRefundReq(org.xxpay.dubbo.service.PayServiceTest)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.xxpay.dubbo.service.impl.PayChannel4AliServiceImpl.doAliRefundReq(PayChannel4AliServiceImpl.java:421)
+	at org.xxpay.dubbo.service.PayServiceTest.testDoAliRefundReq(PayServiceTest.java:82)
+
+testDoAliTransReq(org.xxpay.dubbo.service.PayServiceTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.xxpay.dubbo.service.impl.PayChannel4AliServiceImpl.doAliTransReq(PayChannel4AliServiceImpl.java:324)
+	at org.xxpay.dubbo.service.PayServiceTest.testDoAliTransReq(PayServiceTest.java:47)
+
+testGetAliTransReq(org.xxpay.dubbo.service.PayServiceTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.xxpay.dubbo.service.impl.PayChannel4AliServiceImpl.getAliTransReq(PayChannel4AliServiceImpl.java:376)
+	at org.xxpay.dubbo.service.PayServiceTest.testGetAliTransReq(PayServiceTest.java:62)
+
+testetAliRefundReq(org.xxpay.dubbo.service.PayServiceTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.xxpay.dubbo.service.impl.PayChannel4AliServiceImpl.getAliRefundReq(PayChannel4AliServiceImpl.java:470)
+	at org.xxpay.dubbo.service.PayServiceTest.testetAliRefundReq(PayServiceTest.java:102)
+

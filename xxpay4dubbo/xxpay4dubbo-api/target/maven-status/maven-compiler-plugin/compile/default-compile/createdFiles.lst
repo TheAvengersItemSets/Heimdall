@@ -1,0 +1,9 @@
+org/xxpay/dubbo/api/service/IPayOrderService.class
+org/xxpay/dubbo/api/service/IRefundOrderService.class
+org/xxpay/dubbo/api/service/IMchNotifyService.class
+org/xxpay/dubbo/api/service/IPayChannelService.class
+org/xxpay/dubbo/api/service/IPayChannel4AliService.class
+org/xxpay/dubbo/api/service/INotifyPayService.class
+org/xxpay/dubbo/api/service/ITransOrderService.class
+org/xxpay/dubbo/api/service/IMchInfoService.class
+org/xxpay/dubbo/api/service/IPayChannel4WxService.class
