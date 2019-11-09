@@ -23,8 +23,11 @@ public class PayConstant {
 	public final static String PAY_CHANNEL_ALIPAY_WAP = "ALIPAY_WAP";	    	// 支付宝WAP支付
 	public final static String PAY_CHANNEL_ALIPAY_QR = "ALIPAY_QR";	    		// 支付宝当面付之扫码支付
 
+	public final static String PAY_CHANNEL_FUYOU = "FUYOU_ONLINE";				//富友在线支付
+
 	public final static String CHANNEL_NAME_WX = "WX"; 				// 渠道名称:微信
 	public final static String CHANNEL_NAME_ALIPAY = "ALIPAY"; 		// 渠道名称:支付宝
+	public final static String CHANNEL_NAME_FUYOU = "FUYOU";		//渠道名称:富友
 
 
 	
@@ -103,6 +106,11 @@ public class PayConstant {
 		public final static String TRADE_STATUS_CLOSED = "TRADE_CLOSED";		// 交易关闭
 		public final static String TRADE_STATUS_SUCCESS = "TRADE_SUCCESS";		// 交易成功
 		public final static String TRADE_STATUS_FINISHED = "TRADE_FINISHED";	// 交易成功且结束
+	}
+
+	public static class FuYouConstant{
+		public final static String TRADE_TYPE_WEB = "WEB";
+
 	}
 
 	public static final String NOTIFY_BUSI_PAY = "NOTIFY_VV_PAY_RES";

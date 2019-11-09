@@ -22,6 +22,8 @@
                     <option value="WX_JSAPI" <#if (item.channelId!"") == "WX_JSAPI">selected="selected"</#if>>WX_JSAPI</option>
                     <option value="WX_NATIVE" <#if (item.channelId!"") == "WX_NATIVE">selected="selected"</#if>>WX_NATIVE</option>
                     <option value="WX_MWEB" <#if (item.channelId!"") == "WX_MWEB">selected="selected"</#if>>WX_MWEB</option>
+					<option value="FUYOU_ONLINE" <#if (item.channelId!"") == "FUYOU_ONLINE">selected="selected"</#if>>FUYOU_ONLINE</option>
+
 				</select>
 			</div>
 		</div>
@@ -32,6 +34,8 @@
 					<option value=""></option>
 					<option value="ALIPAY" <#if (item.channelName!"") == "ALIPAY">selected="selected"</#if>>ALIPAY</option>
 					<option value="WX" <#if (item.channelName!"") == "WX">selected="selected"</#if>>WX</option>
+					<option value="FUYOU" <#if (item.channelName!"") == "FUYOU">selected="selected"</#if>>FUYOU</option>
+
 				</select>
 			</div>
 		</div>

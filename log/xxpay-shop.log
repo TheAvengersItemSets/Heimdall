@@ -39,3 +39,217 @@
 2019-10-28 01:43:33.186  INFO 21750 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2019-10-28 01:43:33.186  INFO 21750 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
 2019-10-28 01:43:33.190  INFO 21750 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-29 23:02:37.345  INFO 23959 --- [main] org.xxpay.shop.XxPayShopApplication      : Starting XxPayShopApplication on hanpengdeMacBook-Pro.local with PID 23959 (/code/Heimdall/xxpay-shop/target/classes started by hanpeng in /code/Heimdall)
+2019-10-29 23:02:37.349  INFO 23959 --- [main] org.xxpay.shop.XxPayShopApplication      : No active profile set, falling back to default profiles: default
+2019-10-29 23:02:37.387  INFO 23959 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ea6137: startup date [Tue Oct 29 23:02:37 CST 2019]; root of context hierarchy
+2019-10-29 23:02:38.247  INFO 23959 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-10-29 23:02:38.252  INFO 23959 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-29 23:02:38.253  INFO 23959 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-10-29 23:02:38.304  INFO 23959 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-29 23:02:38.305  INFO 23959 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 921 ms
+2019-10-29 23:02:38.386  INFO 23959 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-29 23:02:38.389  INFO 23959 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-29 23:02:38.389  INFO 23959 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-29 23:02:38.389  INFO 23959 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-29 23:02:38.390  INFO 23959 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-29 23:02:38.706  INFO 23959 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-29 23:02:38.992  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ea6137: startup date [Tue Oct 29 23:02:37 CST 2019]; root of context hierarchy
+2019-10-29 23:02:39.024  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/buy/{goodsId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.buy(java.lang.String)
+2019-10-29 23:02:39.025  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/pay/{goodsOrderId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.pay(java.lang.String)
+2019-10-29 23:02:39.025  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/openQrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.openQrPay(org.springframework.ui.ModelMap)
+2019-10-29 23:02:39.026  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/qrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.qrPay(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,java.lang.Long)
+2019-10-29 23:02:39.026  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-29 23:02:39.026  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId2]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId2(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-29 23:02:39.026  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/payNotify]}" onto public void org.xxpay.shop.controller.GoodsOrderController.payNotify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-10-29 23:02:39.026  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/notify_test]}" onto public void org.xxpay.shop.controller.GoodsOrderController.notifyTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-10-29 23:02:39.027  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/toAliPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.toAliPay(javax.servlet.http.HttpServletRequest,java.lang.Long,java.lang.String)
+2019-10-29 23:02:39.028  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-29 23:02:39.028  INFO 23959 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-29 23:02:39.045  INFO 23959 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-29 23:02:39.045  INFO 23959 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-29 23:02:39.178  INFO 23959 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-10-29 23:02:39.255  INFO 23959 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-29 23:02:39.256  INFO 23959 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-29 23:02:39.259  INFO 23959 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-29 23:02:39.298  INFO 23959 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-10-29 23:02:39.301  INFO 23959 --- [main] org.xxpay.shop.XxPayShopApplication      : Started XxPayShopApplication in 2.128 seconds (JVM running for 2.515)
+2019-10-29 23:20:41.955  INFO 23959 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-29 23:20:41.956  INFO 23959 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-29 23:20:41.969  INFO 23959 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-10-29 23:21:28.309  INFO 23959 --- [http-nio-8081-exec-5] o.x.s.controller.GoodsOrderController    : ====== 开始接收支付宝支付请求 ======
+2019-10-29 23:21:28.310  INFO 23959 --- [http-nio-8081-exec-5] o.x.s.controller.GoodsOrderController    : 【支付宝支付】接收参数:goodsId=G_0001,amount=1,channelId=ALIPAY_WAP
+2019-10-29 23:21:28.353  INFO 23959 --- [http-nio-8081-exec-5] o.x.s.controller.GoodsOrderController    : 插入商品订单,返回:1
+2019-10-29 23:21:41.080  INFO 23959 --- [http-nio-8081-exec-8] o.x.s.controller.GoodsOrderController    : ====== 开始接收支付宝支付请求 ======
+2019-10-29 23:21:41.080  INFO 23959 --- [http-nio-8081-exec-8] o.x.s.controller.GoodsOrderController    : 【支付宝支付】接收参数:goodsId=G_0001,amount=1,channelId=ALIPAY_WAP
+2019-10-29 23:21:41.083  INFO 23959 --- [http-nio-8081-exec-8] o.x.s.controller.GoodsOrderController    : 插入商品订单,返回:1
+2019-10-29 23:22:06.018  INFO 23959 --- [http-nio-8081-exec-10] o.x.s.controller.GoodsOrderController    : ====== 开始接收支付宝支付请求 ======
+2019-10-29 23:22:06.018  INFO 23959 --- [http-nio-8081-exec-10] o.x.s.controller.GoodsOrderController    : 【支付宝支付】接收参数:goodsId=G_0001,amount=1,channelId=ALIPAY_PC
+2019-10-29 23:22:06.020  INFO 23959 --- [http-nio-8081-exec-10] o.x.s.controller.GoodsOrderController    : 插入商品订单,返回:1
+2019-10-29 23:22:30.224  INFO 23959 --- [http-nio-8081-exec-1] o.x.s.controller.GoodsOrderController    : ====== 开始接收支付宝支付请求 ======
+2019-10-29 23:22:30.225  INFO 23959 --- [http-nio-8081-exec-1] o.x.s.controller.GoodsOrderController    : 【支付宝支付】接收参数:goodsId=G_0001,amount=1,channelId=ALIPAY_PC
+2019-10-29 23:22:30.227  INFO 23959 --- [http-nio-8081-exec-1] o.x.s.controller.GoodsOrderController    : 插入商品订单,返回:1
+2019-10-30 02:39:34.425  INFO 23959 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ea6137: startup date [Tue Oct 29 23:02:37 CST 2019]; root of context hierarchy
+2019-10-30 02:39:34.426  INFO 23959 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-30 02:39:34.427  INFO 23959 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-10-30 02:39:34.429  INFO 23959 --- [Thread-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-31 23:46:39.383  INFO 25325 --- [main] org.xxpay.shop.XxPayShopApplication      : Starting XxPayShopApplication on hanpengdeMacBook-Pro.local with PID 25325 (/code/Heimdall/xxpay-shop/target/classes started by hanpeng in /code/Heimdall)
+2019-10-31 23:46:39.386  INFO 25325 --- [main] org.xxpay.shop.XxPayShopApplication      : No active profile set, falling back to default profiles: default
+2019-10-31 23:46:39.420  INFO 25325 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@389b0789: startup date [Thu Oct 31 23:46:39 CST 2019]; root of context hierarchy
+2019-10-31 23:46:40.273  INFO 25325 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-10-31 23:46:40.280  INFO 25325 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-31 23:46:40.281  INFO 25325 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-10-31 23:46:40.345  INFO 25325 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-31 23:46:40.346  INFO 25325 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 926 ms
+2019-10-31 23:46:40.442  INFO 25325 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-31 23:46:40.445  INFO 25325 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-31 23:46:40.446  INFO 25325 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-31 23:46:40.446  INFO 25325 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-31 23:46:40.446  INFO 25325 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-31 23:46:40.844  INFO 25325 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-31 23:46:41.267  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@389b0789: startup date [Thu Oct 31 23:46:39 CST 2019]; root of context hierarchy
+2019-10-31 23:46:41.340  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/buy/{goodsId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.buy(java.lang.String)
+2019-10-31 23:46:41.341  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/pay/{goodsOrderId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.pay(java.lang.String)
+2019-10-31 23:46:41.341  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/openQrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.openQrPay(org.springframework.ui.ModelMap)
+2019-10-31 23:46:41.341  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/qrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.qrPay(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,java.lang.Long)
+2019-10-31 23:46:41.341  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-31 23:46:41.342  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId2]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId2(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-31 23:46:41.342  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/payNotify]}" onto public void org.xxpay.shop.controller.GoodsOrderController.payNotify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-10-31 23:46:41.342  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/notify_test]}" onto public void org.xxpay.shop.controller.GoodsOrderController.notifyTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-10-31 23:46:41.342  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/toAliPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.toAliPay(javax.servlet.http.HttpServletRequest,java.lang.Long,java.lang.String)
+2019-10-31 23:46:41.344  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-31 23:46:41.345  INFO 25325 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-31 23:46:41.370  INFO 25325 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-31 23:46:41.370  INFO 25325 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-31 23:46:41.556  INFO 25325 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-10-31 23:46:41.710  INFO 25325 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-31 23:46:41.711  INFO 25325 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-10-31 23:46:41.714  INFO 25325 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-10-31 23:46:41.756  INFO 25325 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-10-31 23:46:41.760  INFO 25325 --- [main] org.xxpay.shop.XxPayShopApplication      : Started XxPayShopApplication in 12.588 seconds (JVM running for 18.109)
+2019-11-01 02:36:31.933  INFO 25325 --- [Thread-28] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@389b0789: startup date [Thu Oct 31 23:46:39 CST 2019]; root of context hierarchy
+2019-11-01 02:36:31.935  INFO 25325 --- [Thread-28] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-01 02:36:31.935  INFO 25325 --- [Thread-28] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-11-01 02:36:31.943  INFO 25325 --- [Thread-28] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-06 19:49:06.206  INFO 28071 --- [main] org.xxpay.shop.XxPayShopApplication      : Starting XxPayShopApplication on hanpengdeMacBook-Pro.local with PID 28071 (/code/Heimdall/xxpay-shop/target/classes started by hanpeng in /code/Heimdall)
+2019-11-06 19:49:06.209  INFO 28071 --- [main] org.xxpay.shop.XxPayShopApplication      : No active profile set, falling back to default profiles: default
+2019-11-06 19:49:06.229  INFO 28071 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8b96fde: startup date [Wed Nov 06 19:49:06 CST 2019]; root of context hierarchy
+2019-11-06 19:49:06.956  INFO 28071 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-06 19:49:06.963  INFO 28071 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 19:49:06.963  INFO 28071 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-11-06 19:49:07.015  INFO 28071 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 19:49:07.015  INFO 28071 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 786 ms
+2019-11-06 19:49:07.087  INFO 28071 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-06 19:49:07.090  INFO 28071 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-06 19:49:07.090  INFO 28071 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-06 19:49:07.090  INFO 28071 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-06 19:49:07.090  INFO 28071 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-06 19:49:09.556  INFO 28071 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-06 19:49:09.919  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8b96fde: startup date [Wed Nov 06 19:49:06 CST 2019]; root of context hierarchy
+2019-11-06 19:49:09.963  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/buy/{goodsId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.buy(java.lang.String)
+2019-11-06 19:49:09.964  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/pay/{goodsOrderId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.pay(java.lang.String)
+2019-11-06 19:49:09.964  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/openQrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.openQrPay(org.springframework.ui.ModelMap)
+2019-11-06 19:49:09.965  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/qrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.qrPay(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,java.lang.Long)
+2019-11-06 19:49:09.965  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-11-06 19:49:09.965  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId2]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId2(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-11-06 19:49:09.965  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/payNotify]}" onto public void org.xxpay.shop.controller.GoodsOrderController.payNotify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-06 19:49:09.966  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/notify_test]}" onto public void org.xxpay.shop.controller.GoodsOrderController.notifyTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-06 19:49:09.966  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/toAliPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.toAliPay(javax.servlet.http.HttpServletRequest,java.lang.Long,java.lang.String)
+2019-11-06 19:49:09.968  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-06 19:49:09.968  INFO 28071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-06 19:49:09.989  INFO 28071 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-06 19:49:09.989  INFO 28071 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-06 19:49:10.174  INFO 28071 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-11-06 19:49:10.263  INFO 28071 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-06 19:49:10.264  INFO 28071 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-11-06 19:49:10.267  INFO 28071 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-11-06 19:49:10.305  INFO 28071 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-11-06 19:49:10.309  INFO 28071 --- [main] org.xxpay.shop.XxPayShopApplication      : Started XxPayShopApplication in 14.272 seconds (JVM running for 19.623)
+2019-11-06 19:49:24.040  INFO 28071 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-06 19:49:24.041  INFO 28071 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-06 19:49:24.052  INFO 28071 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2019-11-06 19:56:53.927  INFO 28071 --- [Thread-32] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8b96fde: startup date [Wed Nov 06 19:49:06 CST 2019]; root of context hierarchy
+2019-11-06 19:56:53.929  INFO 28071 --- [Thread-32] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-06 19:56:53.929  INFO 28071 --- [Thread-32] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-11-06 19:56:53.933  INFO 28071 --- [Thread-32] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-06 19:57:24.878  INFO 28085 --- [main] org.xxpay.shop.XxPayShopApplication      : Starting XxPayShopApplication on hanpengdeMacBook-Pro.local with PID 28085 (/code/Heimdall/xxpay-shop/target/classes started by hanpeng in /code/Heimdall)
+2019-11-06 19:57:24.880  INFO 28085 --- [main] org.xxpay.shop.XxPayShopApplication      : No active profile set, falling back to default profiles: default
+2019-11-06 19:57:24.908  INFO 28085 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7905a0b8: startup date [Wed Nov 06 19:57:24 CST 2019]; root of context hierarchy
+2019-11-06 19:57:25.777  INFO 28085 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-06 19:57:25.783  INFO 28085 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 19:57:25.784  INFO 28085 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-11-06 19:57:25.842  INFO 28085 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 19:57:25.842  INFO 28085 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 934 ms
+2019-11-06 19:57:25.931  INFO 28085 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-06 19:57:25.934  INFO 28085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-06 19:57:25.935  INFO 28085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-06 19:57:25.935  INFO 28085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-06 19:57:25.935  INFO 28085 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-06 19:57:26.884  INFO 28085 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-06 19:57:27.263  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7905a0b8: startup date [Wed Nov 06 19:57:24 CST 2019]; root of context hierarchy
+2019-11-06 19:57:27.325  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/toAliPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.toAliPay(javax.servlet.http.HttpServletRequest,java.lang.Long,java.lang.String)
+2019-11-06 19:57:27.326  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/buy/{goodsId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.buy(java.lang.String)
+2019-11-06 19:57:27.326  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/pay/{goodsOrderId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.pay(java.lang.String)
+2019-11-06 19:57:27.326  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/qrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.qrPay(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,java.lang.Long)
+2019-11-06 19:57:27.327  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/openQrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.openQrPay(org.springframework.ui.ModelMap)
+2019-11-06 19:57:27.327  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-11-06 19:57:27.327  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId2]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId2(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-11-06 19:57:27.327  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/payNotify]}" onto public void org.xxpay.shop.controller.GoodsOrderController.payNotify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-06 19:57:27.328  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/notify_test]}" onto public void org.xxpay.shop.controller.GoodsOrderController.notifyTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-06 19:57:27.329  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-06 19:57:27.330  INFO 28085 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-06 19:57:27.357  INFO 28085 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-06 19:57:27.357  INFO 28085 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-06 19:57:27.532  INFO 28085 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-11-06 19:57:27.686  INFO 28085 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-06 19:57:27.687  INFO 28085 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-11-06 19:57:27.690  INFO 28085 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-11-06 19:57:27.733  INFO 28085 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-11-06 19:57:27.736  INFO 28085 --- [main] org.xxpay.shop.XxPayShopApplication      : Started XxPayShopApplication in 13.169 seconds (JVM running for 18.628)
+2019-11-06 19:58:05.895  INFO 28085 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-06 19:58:05.895  INFO 28085 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-06 19:58:05.910  INFO 28085 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2019-11-06 20:06:04.429  INFO 28085 --- [Thread-29] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7905a0b8: startup date [Wed Nov 06 19:57:24 CST 2019]; root of context hierarchy
+2019-11-06 20:06:04.432  INFO 28085 --- [Thread-29] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-06 20:06:04.433  INFO 28085 --- [Thread-29] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-11-06 20:06:04.437  INFO 28085 --- [Thread-29] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-06 20:06:31.972  INFO 28110 --- [main] org.xxpay.shop.XxPayShopApplication      : Starting XxPayShopApplication on hanpengdeMacBook-Pro.local with PID 28110 (/code/Heimdall/xxpay-shop/target/classes started by hanpeng in /code/Heimdall)
+2019-11-06 20:06:31.974  INFO 28110 --- [main] org.xxpay.shop.XxPayShopApplication      : No active profile set, falling back to default profiles: default
+2019-11-06 20:06:32.005  INFO 28110 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@389b0789: startup date [Wed Nov 06 20:06:32 CST 2019]; root of context hierarchy
+2019-11-06 20:06:32.791  INFO 28110 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2019-11-06 20:06:32.798  INFO 28110 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 20:06:32.798  INFO 28110 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-11-06 20:06:32.858  INFO 28110 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 20:06:32.858  INFO 28110 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 853 ms
+2019-11-06 20:06:32.946  INFO 28110 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-06 20:06:32.948  INFO 28110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-06 20:06:32.949  INFO 28110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-06 20:06:32.949  INFO 28110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-06 20:06:32.949  INFO 28110 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-06 20:06:34.136  INFO 28110 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-06 20:06:34.530  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@389b0789: startup date [Wed Nov 06 20:06:32 CST 2019]; root of context hierarchy
+2019-11-06 20:06:34.592  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/toAliPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.toAliPay(javax.servlet.http.HttpServletRequest,java.lang.Long,java.lang.String)
+2019-11-06 20:06:34.593  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/buy/{goodsId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.buy(java.lang.String)
+2019-11-06 20:06:34.593  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/qrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.qrPay(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,java.lang.Long)
+2019-11-06 20:06:34.593  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/pay/{goodsOrderId}],methods=[GET]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.pay(java.lang.String)
+2019-11-06 20:06:34.593  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/openQrPay.html]}" onto public java.lang.String org.xxpay.shop.controller.GoodsOrderController.openQrPay(org.springframework.ui.ModelMap)
+2019-11-06 20:06:34.594  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-11-06 20:06:34.594  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/getOpenId2]}" onto public void org.xxpay.shop.controller.GoodsOrderController.getOpenId2(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-11-06 20:06:34.594  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/payNotify]}" onto public void org.xxpay.shop.controller.GoodsOrderController.payNotify(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-06 20:06:34.594  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/goods/notify_test]}" onto public void org.xxpay.shop.controller.GoodsOrderController.notifyTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-11-06 20:06:34.596  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-06 20:06:34.597  INFO 28110 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-06 20:06:34.620  INFO 28110 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-06 20:06:34.621  INFO 28110 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-06 20:06:34.794  INFO 28110 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-11-06 20:06:34.949  INFO 28110 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-06 20:06:34.949  INFO 28110 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-11-06 20:06:34.953  INFO 28110 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-11-06 20:06:34.997  INFO 28110 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2019-11-06 20:06:35.001  INFO 28110 --- [main] org.xxpay.shop.XxPayShopApplication      : Started XxPayShopApplication in 13.22 seconds (JVM running for 18.663)
+2019-11-06 20:07:22.923  INFO 28110 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-06 20:07:22.924  INFO 28110 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-06 20:07:22.938  INFO 28110 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-11-06 20:51:13.604  INFO 28110 --- [Thread-29] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@389b0789: startup date [Wed Nov 06 20:06:32 CST 2019]; root of context hierarchy
+2019-11-06 20:51:13.609  INFO 28110 --- [Thread-29] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-06 20:51:13.609  INFO 28110 --- [Thread-29] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-11-06 20:51:13.615  INFO 28110 --- [Thread-29] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

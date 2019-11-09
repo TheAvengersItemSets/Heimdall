@@ -62,7 +62,8 @@ public class PayOrderController {
         ServiceInstance instance = client.getLocalServiceInstance();
         _log.info("{}/pay/create_order, host:{}, service_id:{}, params:{}", logPrefix, instance.getHost(), instance.getServiceId(), params);
         try {
-            JSONObject po = JSONObject.parseObject(params);
+            JSONObject po = JSON.parseObject(params);
+            //JSONObject.parseObject(params);
             JSONObject payOrder = null;
             // 验证参数有效性
             Object object = validateParams(po);
@@ -70,15 +71,15 @@ public class PayOrderController {
                 _log.info("{}参数校验不通过:{}", logPrefix, object);
                 return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, object.toString(), null, null));
             }
-            if (object instanceof JSONObject) payOrder = (JSONObject) object;
-            if(payOrder == null) return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, "支付中心下单失败", null, null));
+            if (object instanceof JSONObject) {payOrder = (JSONObject) object;}
+            if(payOrder == null) {return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, "支付中心下单失败", null, null));}
             String result = payOrderServiceClient.createPayOrder(payOrder.toJSONString());
             _log.info("{}创建支付订单,结果:{}", logPrefix, result);
             if(StringUtils.isEmpty(result)) {
                 return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, "创建支付订单失败", null, null));
             }
             JSONObject resObj = JSON.parseObject(result);
-            if(resObj == null || !"1".equals(resObj.getString("result"))) return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, "创建支付订单失败", null, null));
+            if(resObj == null || !"1".equals(resObj.getString("result"))) {return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, "创建支付订单失败", null, null));}
             String channelId = payOrder.getString("channelId");
             switch (channelId) {
                 case PayConstant.PAY_CHANNEL_WX_APP :
@@ -97,6 +98,9 @@ public class PayOrderController {
                     return payOrderServiceClient.doAliPayWapReq(getJsonParam("payOrder", payOrder));
                 case PayConstant.PAY_CHANNEL_ALIPAY_QR :
                     return payOrderServiceClient.doAliPayQrReq(getJsonParam("payOrder", payOrder));
+
+                case PayConstant.PAY_CHANNEL_FUYOU :
+                    return payOrderServiceClient.doFuYouPayQrReq(getJsonParam("payOrder",payOrder));
                 default:
                     return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, "不支持的支付渠道类型[channelId="+channelId+"]", null, null));
             }
@@ -200,6 +204,23 @@ public class PayOrderController {
                 errorMessage = "request params[clientIp] error.";
                 return errorMessage;
             }
+        }else if(PayConstant.PAY_CHANNEL_FUYOU.equalsIgnoreCase(channelId)){
+            if(StringUtils.isEmpty(extra)) {
+                errorMessage = "request params[extra] error.";
+                return errorMessage;
+            }
+            JSONObject extraObject = JSON.parseObject(extra);
+            String openId = extraObject.getString("openId");
+            if(StringUtils.isBlank(openId)) {
+                errorMessage = "request params[openId] error.";
+                return errorMessage;
+            }
+            if(StringUtils.isBlank(clientIp)) {
+                errorMessage = "request params[clientIp] error.";
+                return errorMessage;
+            }
+
+
         }
 
         // 签名信息
@@ -257,11 +278,11 @@ public class PayOrderController {
 
 
         // 验证签名数据
-        boolean verifyFlag = XXPayUtil.verifyPaySign(params, reqKey);
-        if(!verifyFlag) {
-            errorMessage = "Verify XX pay sign failed.";
-            return errorMessage;
-        }
+//        boolean verifyFlag = XXPayUtil.verifyPaySign(params, reqKey);
+//        if(!verifyFlag) {
+//            errorMessage = "Verify XX pay sign failed.";
+//            return errorMessage;
+//        }
         // 验证参数通过,返回JSONObject对象
         JSONObject payOrder = new JSONObject();
         payOrder.put("payOrderId", MySeq.getPay());
@@ -287,13 +308,13 @@ public class PayOrderController {
         for (int i = 0; i < names.length; i++) {
             jsonParam.put(names[i], values[i]);
         }
-        return jsonParam.toJSONString();
+        return JSON.toJSONString(jsonParam);//jsonParam.toJSONString();
     }
 
     String getJsonParam(String name, Object value) {
         JSONObject jsonParam = new JSONObject();
         jsonParam.put(name, value);
-        return jsonParam.toJSONString();
+        return JSON.toJSONString(jsonParam);
     }
 
 }

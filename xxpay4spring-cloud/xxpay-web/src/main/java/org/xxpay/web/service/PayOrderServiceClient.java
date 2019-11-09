@@ -117,4 +117,19 @@ public class PayOrderServiceClient {
         return "error";
     }
 
+
+    /**
+     * 对接富友的支付接口
+     */
+    @HystrixCommand(fallbackMethod = "doFuYouPayQrReqFallback")
+    public String doFuYouPayQrReq(String jsonParam) {
+        String result = restTemplate.getForEntity("http://XXPAY-SERVICE/pay/channel/fuyou_wap?jsonParam=" + MyBase64.encode(jsonParam.getBytes()), String.class).getBody();
+        return result;
+    }
+
+    public String doFuYouPayQrReqFallback(String jsonParam) {
+        return "error";
+    }
+
+
 }

@@ -6,6 +6,7 @@ org/xxpay/common/util/RandomStrUtils.class
 org/xxpay/common/util/RpcSignUtils.class
 org/xxpay/common/util/HttpClient.class
 org/xxpay/common/util/XXPayUtil.class
+org/xxpay/common/constant/PayConstant$FuYouConstant.class
 org/xxpay/common/constant/PayConstant$AlipayConstant.class
 org/xxpay/common/util/HttpClient$TrustAnyTrustManager.class
 org/xxpay/common/util/MyBase64.class

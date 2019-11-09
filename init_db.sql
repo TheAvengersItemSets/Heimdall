@@ -55,7 +55,7 @@ CREATE TABLE `t_pay_order` (
   `CreateTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `UpdateTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`PayOrderId`),
-  UNIQUE KEY `IDX_MchId_MchOrderNo` (`MchId`, MchOrderNo)
+  UNIQUE KEY `IDX_MchId_MchOrderNo` (`MchId`, `MchOrderNo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='支付订单表';
 
 CREATE TABLE `t_iap_receipt` (
