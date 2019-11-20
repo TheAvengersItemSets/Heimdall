@@ -1,5 +1,7 @@
 package org.xxpay.service.channel.fuyou;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class FuyouRequest {
 
     //接口名称
@@ -23,7 +25,7 @@ public class FuyouRequest {
     //商户订单号
     private String order_no;
     //交易金额
-    private Double total_fee;
+    private String total_fee;
     //支付类型
     private String payment_type;
     //支付方式
@@ -117,11 +119,11 @@ public class FuyouRequest {
         this.order_no = order_no;
     }
 
-    public Double getTotal_fee() {
+    public String getTotal_fee() {
         return total_fee;
     }
 
-    public void setTotal_fee(Double total_fee) {
+    public void setTotal_fee(String total_fee) {
         this.total_fee = total_fee;
     }
 

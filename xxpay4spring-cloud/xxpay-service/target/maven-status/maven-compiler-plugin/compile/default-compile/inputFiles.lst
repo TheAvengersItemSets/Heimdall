@@ -18,4 +18,5 @@
 /code/Heimdall/xxpay4spring-cloud/xxpay-service/src/main/java/org/xxpay/service/channel/fuyou/FuyouPayUtil.java
 /code/Heimdall/xxpay4spring-cloud/xxpay-service/src/main/java/org/xxpay/service/controller/PayChannel4FuyouController.java
 /code/Heimdall/xxpay4spring-cloud/xxpay-service/src/main/java/org/xxpay/service/controller/Notify4AliPayController.java
+/code/Heimdall/xxpay4spring-cloud/xxpay-service/src/main/java/org/xxpay/service/channel/fuyou/FuyouRequestPro.java
 /code/Heimdall/xxpay4spring-cloud/xxpay-service/src/main/java/org/xxpay/service/controller/PayChannelServiceController.java

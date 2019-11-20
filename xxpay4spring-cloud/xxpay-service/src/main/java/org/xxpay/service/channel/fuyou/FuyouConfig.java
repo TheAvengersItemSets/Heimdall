@@ -16,13 +16,13 @@ public class FuyouConfig {
     //商户号
     private String customer_no;
     //通知 URL
-    private String notify_url;
+    private String notify_url="http://127.0.0.1:8092/goods/payNotify";
     //返回 URL
-    private String return_url;
+    private String return_url="http://127.0.0.1:8092/goods/payNotify";
     //签名
     private String sign;
     //签名方式
-    private String sign_type;
+    private String sign_type="MD5";
     //参数编码字符集
     private String charset = "UTF-8";
     //商品名称
@@ -42,16 +42,14 @@ public class FuyouConfig {
     //接入方式
     private String access_mode = "1";
     //卖家 Email
-    private String seller_email;
+    private String seller_email="1520821958@qq.com";
     //买家 ID
     private String buyer_id;
 
     public FuyouConfig init(String configParam) {
-        Assert.notNull(configParam, "init alipay config error");
+        Assert.notNull(configParam, "init fuyou config error");
         JSONObject paramObj = JSON.parseObject(configParam);
-//        this.customer_no = paramObj.getString("customer_no");
-//        this.notify_url = paramObj.getString("notify_url");
-//        this.return_url = paramObj.getString("return_url");
+        this.customer_no = paramObj.getString("mac_pay_id");
 //        this.sign = paramObj.getString("sign");
 //        this.sign_type = paramObj.getString("sign_type");
 //        this.title = paramObj.getString("title");

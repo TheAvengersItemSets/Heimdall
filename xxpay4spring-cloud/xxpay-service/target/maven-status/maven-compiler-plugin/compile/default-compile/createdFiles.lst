@@ -3,6 +3,7 @@ org/xxpay/service/controller/PayChannelServiceController.class
 org/xxpay/service/controller/MchInfoServiceController.class
 org/xxpay/service/channel/fuyou/FuyouConfig.class
 org/xxpay/service/channel/alipay/AlipayConfig.class
+org/xxpay/service/channel/fuyou/MapKeyComparator.class
 org/xxpay/service/controller/Notify4AliPayController.class
 org/xxpay/XxPayServiceApplication.class
 org/xxpay/service/controller/PayChannel4WxController.class

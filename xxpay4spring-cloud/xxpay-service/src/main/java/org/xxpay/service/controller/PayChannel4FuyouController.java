@@ -21,8 +21,9 @@ import org.xxpay.service.service.MchInfoService;
 import org.xxpay.service.service.PayChannelService;
 import org.xxpay.service.service.PayOrderService;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 @RestController
 public class PayChannel4FuyouController {
@@ -42,6 +43,8 @@ public class PayChannel4FuyouController {
     private MchInfoService mchInfoService;
 
     private static String url = "http://epay.hyhope.top/portal";
+    private static String customer_no = "100000000065113";
+    private static String pwd = "11122a6d6e9a4f85660aba3b3d1b665e67g98453627b8a323a94a314a476gac6";
 
     @RequestMapping(value = "/pay/channel/fuyou_wap")
     public String doFuyouWapReq(@RequestParam String jsonParam) {
@@ -56,31 +59,61 @@ public class PayChannel4FuyouController {
         if("".equals(resKey)) return XXPayUtil.makeRetFail(XXPayUtil.makeRetMap(PayConstant.RETURN_VALUE_FAIL, "", PayConstant.RETURN_VALUE_FAIL, PayEnum.ERR_0001));
         PayChannel payChannel = payChannelService.selectPayChannel(channelId, mchId);
         String str = payChannel.getParam();
-        //fuyouConfig.init(payChannel.getParam());
+        fuyouConfig.init(payChannel.getParam());
+
 
         FuyouRequest fuyouRequest = new FuyouRequest();
         fuyouRequest.setService(fuyouConfig.getService());
-        fuyouRequest.setCustomer_no(UUID.randomUUID().toString().substring(0,10));
-        fuyouRequest.setNotify_url(payOrder.getNotifyUrl());
-        fuyouRequest.setReturn_url(payOrder.getNotifyUrl());
-        fuyouRequest.setSign(payOrder.getBody());
-        fuyouRequest.setSign_type(fuyouConfig.getSign_type());
+        fuyouRequest.setCustomer_no(customer_no);
+        fuyouRequest.setNotify_url(fuyouConfig.getNotify_url());
+        fuyouRequest.setReturn_url(fuyouConfig.getReturn_url());
+
         fuyouRequest.setCharset(fuyouConfig.getCharset());
-        fuyouRequest.setTitle(fuyouConfig.getTitle());
-        fuyouRequest.setBody(fuyouConfig.getBody());
-        fuyouRequest.setOrder_no(fuyouConfig.getOrder_no());
-        fuyouRequest.setTotal_fee(fuyouConfig.getTotal_fee());
+        fuyouRequest.setTitle(payOrder.getSubject());
+        fuyouRequest.setBody(payOrder.getBody());
+        fuyouRequest.setOrder_no(payOrder.getPayOrderId());
+        fuyouRequest.setTotal_fee(payOrder.getAmount().toString());
         fuyouRequest.setPayment_type(fuyouConfig.getPayment_type());
         fuyouRequest.setPaymethod(fuyouConfig.getPaymethod());
         fuyouRequest.setDefaultbank(fuyouConfig.getDefaultbank());
         fuyouRequest.setAccess_mode(fuyouConfig.getAccess_mode());
         fuyouRequest.setSeller_email(fuyouConfig.getSeller_email());
-        fuyouRequest.setBuyer_id(fuyouConfig.getBuyer_id());
+        fuyouRequest.setBuyer_id("123456789");
 
+
+        String sign = "";
+//        Map<String,String> parmsMap = new HashMap<>();
+//        try {
+//            parmsMap = FuyouPayUtil.convertBean(fuyouRequest);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        final List<Map.Entry<String, String>> list = FuyouPayUtil.sortMap(parmsMap);
+
+//        parmsMap = FuyouPayUtil.sortMapByKey(parmsMap);
+
+
+        String parmsString = null;
+        try {
+            parmsString = FuyouPayUtil.ObjectToString(fuyouRequest);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            sign = FuyouPayUtil.MD5(parmsString + pwd);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        fuyouRequest.setSign(sign);
+        fuyouRequest.setSign_type(fuyouConfig.getSign_type());
 
         String payUrl = null;
         try {
-            payUrl = FuyouPayUtil.httpPost(url,JSON.toJSONString(fuyouRequest));
+            Map<String,String> requestMap = FuyouPayUtil.ObjectToString2(fuyouRequest);
+            payUrl = FuyouPayUtil.httpFromPost(url,requestMap);
         } catch (Exception e) {
             e.printStackTrace();
         }
