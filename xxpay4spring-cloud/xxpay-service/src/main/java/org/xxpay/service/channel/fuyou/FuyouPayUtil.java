@@ -268,7 +268,7 @@ public class FuyouPayUtil {
 
     private static String toHex(byte[] bytes) {
 
-        final char[] HEX_DIGITS = "0123456789ABCDEF".toCharArray();
+        final char[] HEX_DIGITS = "0123456789abcdef".toCharArray();
         StringBuilder ret = new StringBuilder(bytes.length * 2);
         for (int i=0; i<bytes.length; i++) {
             ret.append(HEX_DIGITS[(bytes[i] >> 4) & 0x0f]);
