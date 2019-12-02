@@ -1,9 +1,0 @@
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/IRefundOrderService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/ITransOrderService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/IMchInfoService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/IPayOrderService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/IPayChannelService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/INotifyPayService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/IPayChannel4WxService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/IMchNotifyService.java
-/code/Heimdall/xxpay4dubbo/xxpay4dubbo-api/src/main/java/org/xxpay/dubbo/api/service/IPayChannel4AliService.java
